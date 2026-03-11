@@ -102,3 +102,26 @@ Encerrando o chat. Até mais!
 | `make ingest`        | Carrega e indexa o PDF no banco de dados               |
 | `make chat`          | Inicia o chat interativo                               |
 | `make init`          | Executa `install`, `db-up` e `ingest` em sequência    |
+| `make format`        | Formata o código com Black (`src/` e `tests/`)        |
+| `make lint`          | Valida o código com Flake8 (`src/` e `tests/`)        |
+| `make test`          | Executa todos os testes unitários com Pytest           |
+| `make coverage`      | Executa testes com cobertura e exige mínimo de 100%    |
+
+---
+
+## Qualidade de código
+
+Fluxo recomendado antes de subir alterações:
+
+```bash
+make format
+make lint
+make test
+make coverage
+```
+
+Detalhes:
+- `make format`: aplica formatação automática com Black.
+- `make lint`: verifica regras estáticas com Flake8.
+- `make test`: roda os testes unitários em `tests/`.
+- `make coverage`: roda testes com relatório de cobertura e falha se ficar abaixo de 100%.

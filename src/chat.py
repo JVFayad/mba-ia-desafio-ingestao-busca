@@ -1,5 +1,6 @@
 from search import search_prompt
 
+
 def main():
     while True:
         question = input("Faça sua pergunta (ou 'sair' para encerrar): ")
@@ -10,7 +11,9 @@ def main():
         chain = search_prompt(question)
 
         if not chain:
-            print("Não foi possível iniciar o chat. Verifique os erros de inicialização.")
+            print(
+                "Não foi possível iniciar o chat. Verifique os erros de inicialização."
+            )
             return
 
         print(f"\nPERGUNTA: {question}")
