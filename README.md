@@ -18,7 +18,7 @@ Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
 ```env
 GOOGLE_API_KEY=sua_chave_aqui
-GOOGLE_EMBEDDING_MODEL=models/text-embedding-004
+GOOGLE_EMBEDDING_MODEL=gemini-embedding-2-preview
 DATABASE_URL=postgresql+psycopg://postgres:postgres@localhost:5432/rag
 PG_VECTOR_COLLECTION_NAME=documentos
 PDF_PATH=caminho/para/seu/arquivo.pdf
